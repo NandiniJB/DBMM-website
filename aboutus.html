@@ -1,0 +1,53 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <title>About Us</title>
+        <link rel="stylesheet" href="aboutusdesign.css" type="text/css">
+    </head>
+    <body>
+      <h3>DB2M</h3>
+       <div class="navigation">
+           <nav>
+             <ul>
+               <li><a href="DBMM.html">HOME</a></li>
+               <li><a href="login.html">LOGIN</a></li>
+               <li><a href="menu.html">MENU</a></li>
+               <li><a href="feedback.html">FEEDBACK</a></li>
+               <li><a href="aboutus.html">ABOUT US</a></li>
+               <li><a href="contactus.html">CONTACT US</a></li>
+             </ul>
+          </nav>
+         </div>
+         
+          <div class="resp">
+			  <a href="#" class="menuicon" id="icon" onclick="response()">&#x2630;</a>
+          <div class="navigationMob" id="mobile">
+			  <a href="DBMM.html"><input type="button" value="HOME"/></a>
+			  <a href="login.html"><input type="button" value="LOGIN"/></a>
+			  <a href="menu.html"><input type="button" value="MENU"/></a>
+			  <a href="feedback.html"><input type="button" value="FEEDBACK"/></a>
+			  <a href="aboutus.html"><input type="button" value="ABOUT US"/></a>
+			  <a href="contactus.html"><input type="button" value="CONTACT US"/></a>
+          </div>
+        </div>
+        
+        <script type="text/javascript">
+				  function response(){
+					  var x = document.getElementById("mobile");
+					  if(x.style.display === "none"){
+						  x.style.display = "block";
+					  }
+					  else{
+						  x.style.display="none";
+					  }
+				  }
+			  </script>
+       
+       <div class="about">
+        <h1>About Us</h1>
+		   <p><strong><em>Davanagere Bombat Mirchi Masala</em></strong> is a chat shop located in Basaveshwar Nagar, Bangalore. <strong><em>Basavaraj J C</em></strong>, a native of Davanagere started this shop in the year 2012. This is the shop where you can taste famous Davanagere food items. The food items are made with Davanagere's traditional making style without any modifications. The people working here are also from Davanagere and all the items available in this shop are prepared by them only. We are glad to give you the taste of Davanagere.</p></div>
+        <footer>
+        	&copy;DB2M 2018
+        </footer>
+    </body>
+</html>

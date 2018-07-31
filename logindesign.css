@@ -1,0 +1,283 @@
+*{
+    margin : 0;
+    box-sizing : border-box;
+}
+
+body{
+    background-color: gainsboro;
+}
+
+.navigation nav{
+    right: 0px;
+    top: 0px;
+    width : 100%;
+    padding : 20px;px;
+    text-align: right;
+    margin : 0px;
+    display : block;
+    position : inherit;
+    background-color: gray;
+}
+
+
+h3{
+    color : darkred;
+    font-family: snap itc regular;
+    margin : 0px;
+    padding : 5px;
+    font-size : 35px;
+    margin-left : 10px;
+    position : absolute;
+}
+
+.navigation ul{
+    list-style-type : none;
+}
+
+.navigation a{
+    text-decoration: none;
+    font-family : monospace;
+    color : burlywood;
+    background-color: none;
+    padding : 8px;
+    margin : 1px;
+    font-size : 15px;
+    transition-delay: 200ms;
+}
+
+.navigation a:hover{
+    font-weight : bold;
+    opacity: 1;
+    transition-delay: 200ms;
+    border-bottom: 3px solid black;  
+}
+
+ul li{
+    display : inline;
+}
+
+.boxed{
+    width : 400px;
+    height : 450px;
+    border : 0px solid black;
+    margin : auto;
+    margin-top: 75px;
+    border-radius : 10px;
+    box-shadow: 0 0 10px gray;
+    padding : 30px;
+    background-color: white;
+}
+
+h1{
+    text-align: left;
+    font-family: footlight MT light;
+    font-size : 35px;
+}
+
+h2{
+    text-align: left;
+    font-family: footlight MT light;
+    font-size : 25px;
+	padding : 10px;
+}
+
+form{
+    padding : 10px;
+    font-family: footlight mt light;
+    font-size: 12px;
+    color : blue;
+    line-height: 30px;
+}
+
+input{
+    width : 350px;
+    border: 1px solid white;
+    border-bottom: 1px solid black;
+    padding : 10px;
+}
+
+lable{
+     padding : 5px;
+    line-height: 50px;
+    color : black;
+}
+
+.boxed a{
+    text-decoration: none;
+    padding : 10px;
+    line-height: 50px;
+    transition-delay: 200ms;
+    font-weight: 550;
+}
+
+.boxed a:hover{
+    color : royalblue;
+    transition-delay: 200ms;
+}
+
+input:hover{
+    border-bottom : 2px solid black;
+    color : royalblue;
+}
+
+
+.botton input{
+    display : block;
+    width : 80px;
+    text-align: center;
+    float: right;
+    margin-top: -40px;
+    margin-right: 40px;
+    border-radius: 5px;
+    font-size: 18px;
+    transition-delay: 200ms;
+    background-color: gainsboro;
+    font-weight: 600;
+    box-shadow : 2px 2px gray;
+	font-family: footlight mt light;
+}
+
+.botton input:hover{
+    background-color: dimgray;
+    color : white;
+    transition-delay: 200ms;
+    box-shadow : 0 0 10px dimgray;
+    border : 2px solid dimgray;
+}
+
+footer{
+    width : 100%;
+    margin : 0px;
+    padding : 15px;
+    background-color: black;
+    text-align: center;
+    font-family: sans-serif;
+    color : white;
+    position: fixed;
+	top : 93%;
+}
+
+.menuicon{
+	display: none;
+}
+
+.navigationMob{
+	display: none;
+}
+
+@media only screen and (max-width: 700px){
+	
+	.navigation{
+		display : none;
+	}
+	
+	.resp{
+		display : block;
+		position : absolute;
+	}
+	
+	h3{
+		display : block;
+		width: 100%;
+		position : fixed;
+		padding : 8px;
+		background-color: gray;
+		margin: 0;
+		text-align: right;
+		top : 0;
+	}
+	
+	
+	
+	.menuicon{
+		display: block;
+		padding : 5px;
+		font-size : 25px;
+		font-family : monospace;
+		cursor: pointer;
+		background-color: gray;
+		color : black;
+		text-decoration: none;
+		border : 2px solid gray;
+		margin-top: -115px;
+	}
+	
+	.menuicon:hover{
+		color : black;
+		background-color: gray;
+		border : 2px solid gray;
+		box-shadow: 0 0 0 0 gray;
+		
+	}
+	
+	.navigationMob{
+		margin-top: 9px;
+	}
+	
+	.navigationMob input{
+		display: block;
+		width : 120px;
+		padding : 5px;
+		font-family: monospace;
+		font-size: 15px;
+		background-color: gray;
+		color : burlywood;
+		border : 2px solid gray;
+		border-bottom: 1px solid black;
+		transition-delay: 200ms;
+		text-decoration: none;
+	}
+	
+	.navigationMob input:hover{
+		border : 2px solid gray;
+		border-bottom : 2px solid black;
+		font-weight: bold;
+		box-shadow: 0 0 5px 2px gray;
+		transition-delay: 200px;
+		border-top: 1px solid black;
+	}
+	
+	a{
+		text-decoration: none;
+	}
+	
+	.boxed{
+		width : 250px;
+		height : 320px;
+		margin-top: 120px;
+		padding : 15px;
+	}
+	
+	h1{
+		font-size: 25px;
+	}
+	
+	h2{
+		font-size: 20px;
+	}
+	
+	form{
+		line-height: 10px;
+		font-size: 12px;
+	}
+	
+	lable{
+		line-height: 30px;
+	}
+	
+	input{
+		width : 200px;
+		padding : 5px;
+	}
+	.boxed a{
+		padding : 5px;
+		line-height: 40px;
+	}
+	
+	.botton input{
+		font-size: 15px;
+		padding : 5px;
+		margin-right: 10px;
+		width : 60px;
+	}
+}

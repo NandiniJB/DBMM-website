@@ -1,0 +1,41 @@
+*{
+    margin : 0;
+    padding: 0;
+}
+
+body{
+    background-color: silver
+}
+
+p{
+    text-align: center;
+    margin: 10px;
+    padding : 10px;
+    font-size : 20px;
+    font-family: footlight mt light;
+    color : midnightblue;
+    margin-top : 100px;
+}
+
+button{
+    padding : 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top : 30px;
+    border-radius : 5px;
+    background-color: white;
+    font-size : 15px;
+    font-family: footlight mt light;
+    font-weight: 600;
+    border : 2px solid white;
+    box-shadow: 2px 2px gray;
+    transition-delay: 200ms;
+}
+
+button:hover{
+    background-color: dimgray;
+    color : white;
+    box-shadow: 0 0 10px dimgray;
+    border : 2px solid dimgray;
+    transition-delay: 200ms;
+}

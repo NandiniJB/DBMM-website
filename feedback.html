@@ -1,0 +1,132 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <title>Feedback</title>
+        <link rel="stylesheet" href="feedbackdesign.css" type="text/css">
+    </head>
+    <body>
+       <h2>DB2M</h2>
+       <div class="navigation">
+           <nav>
+             <ul>
+               <li><a href="DBMM.html">HOME</a></li>
+               <li><a href="login.html">LOGIN</a></li>
+               <li><a href="menu.html">MENU</a></li>
+               <li><a href="feedback.html">FEEDBACK</a></li>
+               <li><a href="aboutus.html">ABOUT US</a></li>
+               <li><a href="contactus.html">CONTACT US</a></li>
+             </ul>
+          </nav>
+         </div>
+         
+          <div class="resp">
+			  <a href="#" class="menuicon" id="icon" onclick="response()">&#x2630;</a>
+          <div class="navigationMob" id="mobile">
+			  <a href="DBMM.html"><input type="button" value="HOME"/></a>
+			  <a href="login.html"><input type="button" value="LOGIN"/></a>
+			  <a href="menu.html"><input type="button" value="MENU"/></a>
+			  <a href="feedback.html"><input type="button" value="FEEDBACK"/></a>
+			  <a href="aboutus.html"><input type="button" value="ABOUT US"/></a>
+			  <a href="contactus.html"><input type="button" value="CONTACT US"/></a>
+          </div>
+        </div>
+        
+        <script type="text/javascript">
+				  function response(){
+					  var x = document.getElementById("mobile");
+					  if(x.style.display === "none"){
+						  x.style.display = "block";
+					  }
+					  else{
+						  x.style.display="none";
+					  }
+				  }
+			  </script>
+        
+        
+         <div class="feedback">
+           <h1>Encourage us by giving feedback</h1>
+           <form>
+           <div class="content">
+           
+           <ul>
+             
+               <div class="qus" id="Email"><h3><li>    Enter your Email</li></h3>
+               <div class="option1">
+               	<input type="text">
+               </div>
+			   </div>
+               <div class="qus"><h3><li>1. Which is your favorite food item in our shop?</li></h3><div class="list">
+               
+                <input type="text" list="dl">
+                <datalist id="dl">
+                    <option>Masala Mandakki</option>
+                    <option>Masala Avalakki</option>
+                    <option>Vaggarane Mandakki</option>
+                    <option>Kaara Mandakki</option>
+                    <option>Nargees Mandakki</option>
+                    <option>Capsicum</option>
+                    <option>Masala Mirchi</option>
+                    <option>Masala Vada</option>
+                    <option>Mirchi Bajji</option>
+                </datalist>
+                   </div></div>
+                   <div class="qus"> <h3><li>2. How do you rate service of our shop?</li></h3><div class="option">
+                   <input type="radio" name="2" value="E"> EXCELLENT<br>
+                   <input type="radio" name="2" value="VG"> VERY GOOD<br>
+                   <input type="radio" name="2" value="G"> GOOD<br>
+                   <input type="radio" name="2" value="B"> BAD<br>
+                       <input type="radio" name="2" value="VB"> VERY BAD</div></div>
+               <div class="qus"><h3><li>3. How do you rate the taste of our food items?</li></h3><div class="option"><input type="radio" name="3" value="E"> EXCELLENT<br>
+                   <input type="radio" name="3" value="VG"> VERY GOOD<br>
+                   <input type="radio" name="3" value="G"> GOOD<br>
+                   <input type="radio" name="3" value="VB"> BAD<br>
+                   <input type="radio" name="3" value="VB"> VERY BAD</div></div>
+               <div class="qus"><h3><li>4. How do you rate quality of our food?</li></h3><div class="option">
+               <input type="radio" name="4" value="E"> EXCELLENT<br>
+                   <input type="radio" name="4" value="VG"> VERY GOOD<br>
+                   <input type="radio" name="4" value="G"> GOOD<br>
+                   <input type="radio" name="4" value="B"> BAD<br>
+                   <input type="radio" name="4" value="VB"> VERY BAD</div></div>
+                <div class="qus"><h3><li>5. How do you rate our price for the food items?</li></h3><div class="option"><input type="radio" name="5" value="E"> EXCELLENT<br>
+                   <input type="radio" name="5" value="VG"> VERY GOOD<br>
+                   <input type="radio" name="5" value="G"> GOOD<br>
+                   <input type="radio" name="5" value="B"> BAD<br>
+                    <input type="radio" name="5" value="VB"> VERY BAD</div></div>
+            
+            </ul>
+            
+            <botton class="left" id="l" onclick="nextSlide(-1)">&#10094;</botton>
+            <botton class="right" onclick="nextSlide(+1)">&#10095;</botton>
+             </div>
+        
+
+<script>
+	
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function nextSlide(n) {
+    showDivs(slideIndex +=n);
+}
+                
+function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("qus");
+    if(n > x.length) {slideIndex = 1}
+    if(n<1) {slideIndex = x.length} 
+    for(i=0; i < x.length; i++) {
+        x[i].style.display = "none";
+    }
+    x[slideIndex - 1].style.display = "block";
+}
+             
+</script>
+             
+               <div class="submit"><a href="submit.html"><button type="button">Submit</button></a></div>
+        </form>
+        </div>
+        <footer>&copy;DB2M 2018</footer>
+    </body>
+</html>
+        

@@ -1,0 +1,62 @@
+<!DOCTYPE>
+<html>
+   <head>
+      <link rel="stylesheet" href="menudesign.css" type="text/css">
+   </head>
+   <body>
+    <h3>DB2M</h3>
+     <div class="navigation">
+           <nav>
+             <ul>
+               <li><a href="DBMM.html">HOME</a></li>
+               <li><a href="login.html">LOGIN</a></li>
+               <li><a href="menu.html">MENU</a></li>
+               <li><a href="feedback.html">FEEDBACK</a></li>
+               <li><a href="aboutus.html">ABOUT US</a></li>
+               <li><a href="contactus.html">CONTACT US</a></li>
+             </ul>
+          </nav>
+         </div>
+         
+         <div class="resp">
+			  <a href="#" class="menuicon" id="icon" onclick="response()">&#x2630;</a>
+          <div class="navigationMob" id="mobile">
+			  <a href="DBMM.html"><input type="button" value="HOME"/></a>
+			  <a href="login.html"><input type="button" value="LOGIN"/></a>
+			  <a href="menu.html"><input type="button" value="MENU"/></a>
+			  <a href="feedback.html"><input type="button" value="FEEDBACK"/></a>
+			  <a href="aboutus.html"><input type="button" value="ABOUT US"/></a>
+			  <a href="contactus.html"><input type="button" value="CONTACT US"/></a>
+          </div>
+        </div>
+        
+        <script type="text/javascript">
+				  function response(){
+					  var x = document.getElementById("mobile");
+					  if(x.style.display === "none"){
+						  x.style.display = "block";
+					  }
+					  else{
+						  x.style.display="none";
+					  }
+				  }
+			  </script>
+			  
+			  
+      <h1> MENU ITEMS</h1>
+       <div class="grid-container">
+		   <div class="grid-item grid-item1">Masala Mandakki<br><br><div class="hidden">Price: 20</div></div>
+          <div class="grid-item grid-item2">Masala Avalakki<br><br><div class="hidden">Price: 20</div></div>
+          <div class="grid-item grid-item3">Vaggarane Mandakki<br><br><div class="hidden">Price: 20</div></div>
+          <div class="grid-item grid-item4">Kaara Mandakki<br><br><div class="hidden">Price: 15</div></div>
+          <div class="grid-item grid-item5">Nargees Mandakki<br><br><div class="hidden">Price: 15</div></div>
+          <div class="grid-item grid-item6">Capsicum<br><br><div class="hidden">Price: 15</div></div>
+          <div class="grid-item grid-item7">Masala Mirchi<br><br><div class="hidden">Price: 10</div></div>
+          <div class="grid-item grid-item8">Masala Vada<br><br><div class="hidden">Price: 5</div></div>
+          <div class="grid-item grid-item9">Mirchi Bajji<br><br><div class="hidden">Price: 5</div></div>
+       </div>
+       <footer>
+           &copy;DB2M 2018
+       </footer>
+   </body>
+</html>

@@ -1,0 +1,230 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    background-color: none;
+}
+
+body{
+       background-color: lightgray;
+    
+}
+
+.navigation nav{
+    top: 0;
+    right : 0;
+    width : 100%;
+    text-align: right;
+    height : 60px;
+    padding : 20px;
+    background-color: gray;
+    position : inherit;
+    display : block;
+}
+
+h3{
+    color : darkred;
+    font-family: snap itc regular;
+    margin : 0px;
+    padding : 5px;
+    font-size : 35px;
+    margin-left : 10px;
+    position : absolute;
+}
+
+.navigation ul{
+    list-style-type : none;
+}
+
+.navigation a{
+    text-decoration: none;
+    font-family : monospace;
+    color : burlywood;
+    background-color: none;
+    padding : 8px;
+    margin : 1px;
+    font-size : 15px;
+    transition-delay: 200ms;
+}
+
+a:hover{
+    font-weight : bold;
+    opacity: 1;
+    transition-delay: 200ms;
+    border-bottom: 3px solid black;
+}
+
+ul li{
+    display : inline;
+    
+}
+
+.contact{
+	position : absolute;
+	top : 150px;
+    left : 400px;
+	right : 350px;
+}
+
+h1{
+    font-family: footlight mt light;;
+    color : darkgreen;
+    border-bottom: 1px solid black;
+    font-size: 30px;
+}
+
+h4{
+    margin : 10px;
+    padding : 10px;
+    line-height: 25px;
+    font-family: footlight mt light;
+    font-size: 20px;
+    color : darkslategrey;
+	font-weight: 200;
+}
+
+p{
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding : 10px;
+    font-family: footlight mt light;
+    color : dimgrey;
+}
+
+footer{
+    width : 100%;
+    margin : 0px;
+    padding : 15px;
+    background-color: black;
+    text-align: center;
+    font-family: sans-serif;
+    color : white;
+    position: fixed;
+	top : 93%;
+}
+
+.resp{
+	display: none;
+}
+
+
+.navigationMob{
+	display: none;
+}
+
+@media only screen and (max-width: 700px){
+	
+	.navigation{
+		display : none;
+	}
+	
+	.resp{
+		display : block;
+		position : absolute;
+	}
+	
+	h3{
+		display : block;
+		width: 100%;
+		position : fixed;
+		padding : 8px;
+		background-color: gray;
+		margin: 0;
+		text-align: right;
+		top: 0;
+	}
+	
+	a{
+		text-decoration: none;
+	}
+	
+	.menuicon{
+		display: block;
+		padding : 5px;
+		font-size : 25px;
+		font-family : monospace;
+		cursor: pointer;
+		background-color: gray;
+		color : black;
+		text-decoration: none;
+		border : 2px solid gray;
+		margin-top: 5px;
+	}
+	
+	.menuicon:hover{
+		color : black;
+		background-color: gray;
+		border : 2px solid gray;
+		box-shadow: 0 0 0 0 gray;
+		
+	}
+	
+	.navigationMob{
+		margin-top: 9px;
+	}
+	
+	.navigationMob input{
+		display: block;
+		width : 120px;
+		padding : 5px;
+		font-family: monospace;
+		font-size: 15px;
+		background-color: gray;
+		color : burlywood;
+		border : 2px solid gray;
+		border-bottom: 1px solid black;
+		transition-delay: 200ms;
+		
+	}
+	
+	.navigationMob input:hover{
+		border : 2px solid gray;
+		border-bottom : 2px solid black;
+		font-weight: bold;
+		box-shadow: 0 0 5px 2px gray;
+		transition-delay: 200px;
+		border-top: 1px solid black;
+	}
+	
+	.contact{
+		left : 130px;
+		right : 130px;
+	}
+	
+	h1{
+		font-size : 25px;
+	}
+	
+	h4{
+		font-size : 17px;
+		line-height: 20px;
+	}
+	
+	p{
+		font-size:14px;
+		margin-bottom: 10px;
+	}
+	
+}
+
+@media only screen and (max-width : 450px){
+	
+	.contact{
+		right : 50px;
+	}
+	
+	h1{
+		font-size : 18px;
+	}
+	
+	h4{
+		font-size : 14px;
+		line-height: 15px;
+	}
+	
+	p{
+		font-size :12px;
+		margin-bottom: 10px;
+	}
+}

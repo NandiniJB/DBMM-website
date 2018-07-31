@@ -1,0 +1,225 @@
+*{
+	margin : 0;
+	box-sizing: border-box;
+}
+
+body{
+	background-image: url("IMG_20180722_193745.jpg");
+}
+
+img{
+	width: 100%;
+	height : 100%;
+}
+
+strong{
+	transition-delay: 300ms;
+}
+
+strong:hover{
+	color : darkred;
+	transition-delay: 300ms;
+}
+
+.head{
+	position : absolute;
+	top : 200px;
+	right : 300px;
+	padding : 10px;
+	left : 100px;
+	width : 700px;
+}
+
+h1{
+	font-family: 'Rancho', cursive;
+	margin : 0;
+	font-size : 80px;
+	color : red;
+	text-shadow: 4px 2px black;
+	text-align: center;
+	letter-spacing: 2px;
+}
+
+h2{
+	font-family: 'Rancho', cursive;
+	margin : 0;
+	font-size : 60px;
+	color : red;
+	text-shadow: 4px 2px black;
+	text-align: center;
+	word-spacing: 5px;
+	letter-spacing: 2px;
+}
+
+h3{
+    color : darkred;
+    position : fixed;
+    font-family: snap itc regular;
+    margin : 0px;
+    padding : 5px;
+    font-size : 35px;
+    margin-left : 10px;
+}
+
+.navigation nav{
+    text-align: right;
+    top: 0px;
+    display : block;
+    width : 100%;
+    padding : 20px;
+    background-color: gray;
+    position: inherit;margin: 0;
+}
+
+.navigation ul{
+    list-style-type : none;
+}
+
+.navigation a{
+    text-decoration: none;
+    font-family : monospace;
+    color : burlywood;
+    background-color: none;
+    padding : 8px;
+    margin : 1px;
+    font-size : 15px;
+    transition-delay: 200ms;
+    
+}
+
+.navigation a:hover{
+    font-weight : bold;
+    opacity: 1;
+    transition-delay: 200ms;
+	border-bottom: 3px solid black;
+	
+}
+
+
+ul li{
+    display : inline;
+    
+}
+
+.menu ul{
+    list-style-type: circle;
+}
+
+/*font-family: 'Knewave', cursive;
+font-family: 'Great Vibes', cursive;
+font-family: 'Rancho', cursive;
+font-family: 'Marck Script', cursive;*/
+
+.menuicon{
+	display: none;
+}
+
+.navigationMob{
+	display : none;
+}
+
+@media only screen and (max-width : 700px){
+	
+	.navigation{
+		display : none;
+	}
+	
+	body{
+		background-image: url("IMG_20180722_193842.jpg");
+	}
+	
+	h3{
+		display : block;
+		width : 100%;
+		text-align: right;
+		padding : 10px;
+		margin : 0;
+		background-color: gray;
+	}
+	
+	.menuicon{
+		display : block;
+		text-decoration: none;
+		padding : 5px;
+		font-family : monospace;
+		font-size : 25px;
+		position: absolute;
+		margin-top: 10px;
+		color : black;
+		text-decoration: none;
+	}
+	
+	.menuicon:hover{
+		color : black;
+		background-color: gray;
+		box-shadow: 0 0 0 0 gray;
+	}
+	
+	.navigationMob{
+		display: none;
+		position :absolute;
+		margin-top: 65px;
+	}
+	
+	.navigationMob a{
+		text-decoration: none;
+	}
+	
+	.navigationMob input{
+		display : block;
+		text-decoration-skip: none;
+		width : 120px;
+		padding : 5px;
+		background-color: gray;
+		border : 2px solid gray;
+		border-bottom: 1px solid black;
+		color : burlywood;
+		font-size: 15px;
+		font-family: monospace;
+		transition-delay: 200px;
+	}
+	
+	.navigationMob input:hover{
+		border : 2px solid gray;
+		border-bottom : 2px solid black;
+		font-weight: bold;
+		box-shadow: 0 0 5px 2px gray;
+		transition-delay: 200px;
+		border-top: 1px solid black;
+	}
+	
+	.head{
+		left : 50px;
+	}
+	
+	h1{
+		font-size: 60px;
+	}
+	
+	h2{
+		font-size: 40px;
+	}
+	
+}
+
+@media only screen and (max-width : 480px){
+	body{
+		background-image: url("IMG_20180722_194003.JPG");
+	}
+	.head{
+		top : 250px;
+	}
+	
+	
+	
+	h1{
+		font-size: 40px;
+		width : 400px;
+	}
+	
+	h2{
+		width : 400px;
+		font-size: 30px;
+	}
+      	
+}
